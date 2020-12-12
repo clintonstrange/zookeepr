@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/clintonstrange/zookeepr.git"
   },
-  "keywords": [],
+  "keywords": ["heroku"],
   "author": "",
   "license": "ISC",
   "bugs": {
