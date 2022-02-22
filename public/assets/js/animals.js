@@ -2,7 +2,7 @@ const $animalForm = document.querySelector("#animals-form");
 const $displayArea = document.querySelector("#display-area");
 
 const printResults = (resultArr) => {
-  console.log(resultArr);
+  //console.log(resultArr);
 
   const animalHTML = resultArr.map(
     ({ id, name, personalityTraits, species, diet }) => {
@@ -66,8 +66,9 @@ const handleGetAnimalsSubmit = (event) => {
   }
 
   const personalityTraitArr = [];
-  const selectedTraits = $animalForm.querySelector('[name="personality"')
-    .selectedOptions;
+  const selectedTraits = $animalForm.querySelector(
+    '[name="personality"'
+  ).selectedOptions;
 
   for (let i = 0; i < selectedTraits.length; i += 1) {
     personalityTraitArr.push(selectedTraits[i].value);
