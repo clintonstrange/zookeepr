@@ -2,7 +2,7 @@ const $zookeeperForm = document.querySelector("#zookeeper-form");
 const $displayArea = document.querySelector("#display-area");
 
 const printResults = (resultArr) => {
-  console.log(resultArr);
+  //console.log(resultArr);
 
   const zookeeperHTML = resultArr.map(({ id, name, age, favoriteAnimal }) => {
     return `
@@ -38,7 +38,7 @@ const getZookeepers = (formData = {}) => {
       return response.json();
     })
     .then((zookeeperArr) => {
-      console.log(zookeeperArr);
+      //console.log(zookeeperArr);
       printResults(zookeeperArr);
     });
 };

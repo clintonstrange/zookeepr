@@ -36,7 +36,7 @@ const getAnimals = (formData = {}) => {
     queryUrl += `${key}=${value}&`;
   });
 
-  console.log(queryUrl);
+  //console.log(queryUrl);
   fetch(queryUrl)
     .then((response) => {
       if (!response.ok) {
@@ -45,7 +45,7 @@ const getAnimals = (formData = {}) => {
       return response.json();
     })
     .then((animalData) => {
-      console.log(animalData);
+      //console.log(animalData);
       printResults(animalData);
     });
 };
